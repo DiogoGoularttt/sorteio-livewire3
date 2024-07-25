@@ -24,6 +24,6 @@ class Sorteio extends Component
         $winner = Candidate::query()->inRandomOrder()->first();
 
         //Chamamos a varável winner que contém o usuário consultado e pegamos a propriedade name dele
-        $this->winner = $winner->name;
+        $this->winner = $winner?->name;
     }
 }
