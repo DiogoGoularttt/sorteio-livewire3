@@ -15,7 +15,8 @@ class Create extends Component
     public function save()
     {
         $this->validate(); //Validar as regras
-        $this->form->store();
+        $this->form->store();   
+        $this->dispatch('candidate::created'); // evento
     }
 
     public function render(): View
