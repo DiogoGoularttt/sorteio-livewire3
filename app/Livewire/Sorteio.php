@@ -12,7 +12,7 @@ class Sorteio extends Component
 
     public function mount()
     {
-        // sleep(3); //tempo para recarregar a página
+        sleep(3); //tempo para carregar a parte de sortear
     }
 
     public function placeholder(): string // faz o uso do lazy lá no componente dashboard para fazer um carregamento.
